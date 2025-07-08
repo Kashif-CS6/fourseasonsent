@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="md:h-[474px] flex flex-col justify-end gap-20 ">
       {/* top section */}
-      <div className="flex justify-between flex-wrap md:flex-nowrap gap-4 md:gap-0 px-4 xl:px-0">
+      <div className="flex justify-between flex-wrap md:flex-nowrap gap-4 md:gap-0 px-4 2xl:px-0">
         {/* level 1 */}
         <div className="w-[277.83px] flex flex-col gap-6">
           <Image
