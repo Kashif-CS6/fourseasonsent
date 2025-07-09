@@ -18,12 +18,16 @@ export default function Home() {
           <Navbar />
         </HalfTemplate>
       </FullTemplate>
+
       {/* hero section */}
       <div className="bg-[#d2f4da] md:rounded-bl-[200px]">
         <HalfTemplate>
           <Hero />
         </HalfTemplate>
       </div>
+      <HalfTemplate>
+        <ProductsAndServices />
+      </HalfTemplate>
       <div
         className="w-full h-full bg-[#d2f4da]"
         style={{
@@ -39,8 +43,6 @@ export default function Home() {
       </div>
 
       <HalfTemplate>
-        <ProductsAndServices />
-
         <LeadershipTeam />
       </HalfTemplate>
 
