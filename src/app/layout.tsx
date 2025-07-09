@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { PT_Serif } from "next/font/google";
 import "./globals.css";
+import FullTemplate from "./_components/Template/FullTemplate";
+import HalfTemplate from "./_components/Template/HalfTemplate";
+import Footer from "./_components/common/Footer";
+import Navbar from "./_components/common/Navbar";
 
-// Load Poppins font
-const poppins = Poppins({
-  variable: "--font-poppins",
-  weight: ["400", "500", "600", "700"], // You can adjust weights as needed
+// Load PT Serif font
+const ptSerif = PT_Serif({
+  variable: "--font-pt-serif",
+  weight: ["400", "700"], // Adjust as needed
   subsets: ["latin"],
 });
 
@@ -21,7 +25,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} antialiased`}>{children}</body>
+      <body className={`${ptSerif.variable} antialiased relative`}>
+        <div className="bg-[#E1FEE2] sticky top-0">
+          <HalfTemplate>
+            <Navbar />
+          </HalfTemplate>
+        </div>
+        <div>{children}</div>
+        <div className="bg-[#F8FAFC]">
+          <HalfTemplate>
+            <Footer />
+          </HalfTemplate>
+        </div>
+      </body>
     </html>
   );
 }

@@ -3,7 +3,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="flex justify-between flex-wrap md:flex-nowrap pt-20 pb-30 px-4 2xl:px-0">
+    <div className="flex justify-between flex-wrap md:flex-nowrap font-sans pt-20 pb-30 px-4 2xl:px-0">
       {/* Left Side (Form) */}
       <div className="w-[480px] h-[576px]  flex flex-col  justify-between">
         {/* First Name, Last Name */}

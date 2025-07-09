@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="h-[100px]     flex items-center justify-between px-2 2xl:px-0">
+    <nav className="h-[100px] font-sans    flex items-center justify-between px-2 2xl:px-0">
       {/* left */}
       <div>
         <Image src={"/logo.svg"} width={130} height={40} alt="logo" />
@@ -18,10 +18,10 @@ const Navbar = () => {
         >
           Home
         </Link>
-        <Link href={"/"} className=" rounded-[106.18px] px-9 py-[11px]">
+        <Link href={"/#about"} className=" rounded-[106.18px] px-9 py-[11px]">
           About us
         </Link>
-        <Link href={"/"} className="rounded-[106.18px] px-9 py-[11px]">
+        <Link href={"/#contact"} className="rounded-[106.18px] px-9 py-[11px]">
           Contact us
         </Link>
         <Link href={"/"} className=" rounded-[106.18px] px-9 py-[11px]">
@@ -30,7 +30,7 @@ const Navbar = () => {
       </div>
       {/* right */}
       <button className="w-[160px] h-[45px] rounded-[6px]  font-[400] font-serif text-center flex items-center justify-center text-[18px] text-white bg-[#3BAC43]">
-        Start Shopping
+        Enquire Now
       </button>
     </nav>
   );

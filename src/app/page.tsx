@@ -12,22 +12,18 @@ import Hero from "./_components/Hero";
 
 export default function Home() {
   return (
-    <>
-      <FullTemplate color="#E1FEE2">
-        <HalfTemplate>
-          <Navbar />
-        </HalfTemplate>
-      </FullTemplate>
-
+    <div>
       {/* hero section */}
       <div className="bg-[#d2f4da] md:rounded-bl-[200px]">
         <HalfTemplate>
           <Hero />
         </HalfTemplate>
       </div>
+      {/* Product and Services */}
       <HalfTemplate>
         <ProductsAndServices />
       </HalfTemplate>
+      {/* why chose us */}
       <div
         className="w-full h-full bg-[#d2f4da]"
         style={{
@@ -42,18 +38,9 @@ export default function Home() {
         </HalfTemplate>
       </div>
 
-      <HalfTemplate>
-        <LeadershipTeam />
-      </HalfTemplate>
-
-      <FullTemplate color="#E1FEE2">
-        <HalfTemplate>
-          <Aboutus />
-        </HalfTemplate>
-      </FullTemplate>
       {/* our clients */}
       <div className="mb-30 px-4 xl:px-0">
-        <div className="xl:w-[1007px] font-serif flex justify-center flex-col text-center items-center mx-auto py-10">
+        <div className="xl:w-[1007px]  flex justify-center flex-col text-center items-center mx-auto py-10">
           <h1 className="text-[40px] font-[700]">Our Clients</h1>
           <p className="text-[20px] font-[400]">
             Start your journey with fresh ideas. Explore vibrant options, make
@@ -70,26 +57,33 @@ export default function Home() {
         />
       </div>
 
-      {/* Contact Form */}
+      {/* About us */}
+      <FullTemplate color="#E1FEE2" id="about">
+        <HalfTemplate>
+          <Aboutus />
+        </HalfTemplate>
+      </FullTemplate>
+      <HalfTemplate>
+        <LeadershipTeam />
+      </HalfTemplate>
 
-      <div className="flex flex-col gap-4 py-10 px-4 xl:px-0">
+      {/* Contact Form */}
+      <div className="flex flex-col gap-4 py-10 px-4 xl:px-0 font-sans">
         <h1 className="text-[36px] font-[600] text-center leading-[44px] tracking-[-2%]">
           Get In touch
         </h1>
-        <p className="text-center text-[20px] font-[400] text-[#667085]">
+        <p
+          id="contact"
+          className="text-center text-[20px] font-[400] text-[#667085]"
+        >
           We’d love to hear from you. Please fill out this form.
         </p>
       </div>
-      <FullTemplate color="#EFFFF0">
+      <FullTemplate color="#EFFFF0" id="normal">
         <HalfTemplate>
           <ContactForm />
         </HalfTemplate>
       </FullTemplate>
-      <FullTemplate color="#F8FAFC">
-        <HalfTemplate>
-          <Footer />
-        </HalfTemplate>
-      </FullTemplate>
-    </>
+    </div>
   );
 }

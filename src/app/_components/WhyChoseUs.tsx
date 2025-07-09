@@ -2,7 +2,7 @@ import React from "react";
 
 const WhyChooseUs = () => {
   return (
-    <section className="h-[752px] flex justify-start font-serif px-4 2xl:px-0">
+    <section className="h-[752px] flex justify-start  px-4 2xl:px-0">
       <div className="flex justify-start items-center gap-8">
         {/* Left Text Column */}
         <div className="md:w-[599px] ">

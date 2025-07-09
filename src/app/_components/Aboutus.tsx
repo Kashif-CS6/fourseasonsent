@@ -5,7 +5,7 @@ const Aboutus = () => {
   return (
     <div className="my-2 xl:h-[541px]  flex items-center flex-wrap  justify-between p-4">
       {/* Left Side */}
-      <div className="w-[644px] p-6 rounded-md font-serif">
+      <div className="w-[644px] p-6 rounded-md ">
         <h2 className="text-[40px] font-[700] mb-4">About us</h2>
 
         {/* Company History */}

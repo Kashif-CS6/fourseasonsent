@@ -5,7 +5,7 @@ const LeadershipTeam = () => {
   return (
     <div className="bg-white py-10 px-4 xl:px-0">
       {/* Heading */}
-      <div className="text-center mb-10 font-serif">
+      <div className="text-center mb-10">
         <h2 className="text-[40px]  font-[700] mb-4">Leadership Team</h2>
         <p className="text-[#403F3F] xl:w-[1007px] text-[20px] font-[400] mx-auto">
           Start your journey with fresh ideas. Explore vibrant options, make
@@ -20,7 +20,7 @@ const LeadershipTeam = () => {
       <div className="flex justify-center gap-6 flex-wrap">
         {/* Team Member 1 (with blue border) */}
         {[1, 2, 3].map((item, index) => (
-          <div key={index} className="  overflow-hidden text-center font-serif">
+          <div key={index} className="  overflow-hidden text-center ">
             <Image
               src="/leader.svg"
               alt="CEO"
