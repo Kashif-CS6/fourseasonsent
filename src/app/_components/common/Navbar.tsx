@@ -7,7 +7,13 @@ const Navbar = () => {
     <nav className="h-[100px] font-sans    flex items-center justify-between px-2 2xl:px-0">
       {/* left */}
       <div>
-        <Image src={"/logo.svg"} width={130} height={40} alt="logo" />
+        <Image
+          src={"/logo.png"}
+          width={130}
+          height={40}
+          alt="logo"
+          className="w-[180px] h-[40px] xl:w-[200px] xl:h-[50px] object-cover"
+        />
       </div>
 
       {/* middle */}
@@ -32,7 +38,7 @@ const Navbar = () => {
         </Link>
       </div>
       {/* right */}
-      <button className="w-[160px] h-[45px] rounded-[6px]  font-[400] font-serif text-center flex items-center justify-center text-[18px] text-white bg-[#3BAC43]">
+      <button className="w-[140px] py-[6px] md:py-0 md:w-[160px] md:h-[45px] rounded-[6px]  font-[400] font-serif text-center flex items-center justify-center text-[18px] text-white bg-[#3BAC43]">
         Enquire Now
       </button>
     </nav>
