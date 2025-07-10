@@ -41,7 +41,7 @@ export default function Home() {
       {/* our clients */}
       <div className="mb-30 px-4 xl:px-0">
         <div className="xl:w-[1007px]  flex justify-center flex-col text-center items-center mx-auto py-10">
-          <h1 className="text-[40px] font-[700]">Our Clients</h1>
+          <h1 className="text-[40px] md:text-[45px] font-[700]">Our Clients</h1>
           <p className="text-[20px] font-[400]">
             Start your journey with fresh ideas. Explore vibrant options, make
             bold choices, and craft experiences that matter. From clean designs
@@ -69,7 +69,7 @@ export default function Home() {
 
       {/* Contact Form */}
       <div className="flex flex-col gap-4 py-10 px-4 xl:px-0 font-sans">
-        <h1 className="text-[36px] font-[600] text-center leading-[44px] tracking-[-2%]">
+        <h1 className="text-[36px] md:text-[45px] font-[600] text-center leading-[44px] tracking-[-2%]">
           Get In touch
         </h1>
         <p

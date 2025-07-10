@@ -18,7 +18,10 @@ const Navbar = () => {
         >
           Home
         </Link>
-        <Link href={"/#about"} className=" rounded-[106.18px] px-9 py-[11px]">
+        <Link
+          href={"/#about"}
+          className=" rounded-[106.18px] px-9 py-[11px] duration-700 delay-150"
+        >
           About us
         </Link>
         <Link href={"/#contact"} className="rounded-[106.18px] px-9 py-[11px]">

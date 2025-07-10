@@ -9,12 +9,16 @@ const Hero = () => {
         <button className="md:w-[445px] h-[47px] rounded-[360px] bg-white border-[1px] border-[#A9A7A7] tracking-wider">
           Supply Freshers & Quality for 25 Years
         </button>
-        <div className="leading-[55px]">
-          <h1 className="text-[40px] font-[700]">Organic Foods</h1>
-          <h1 className="text-[#3BAC43] text-[40px] font-[700]">
+        <div className="leading-[55px] md:leading-[60px]">
+          <h1 className="text-[40px] md:text-[45px] font-[700]">
+            Organic Foods
+          </h1>
+          <h1 className="text-[#3BAC43] text-[40px] md:text-[45px] font-[700]">
             Your Doorsteps
           </h1>
-          <h1 className="text-[40px] font-[700]">Freshness Delivered.</h1>
+          <h1 className="text-[40px] md:text-[45px] font-[700]">
+            Freshness Delivered.
+          </h1>
         </div>
         <p className="text-[18px] font-[400] text-[#403F3F] text-justify">
           Experience the true taste of nature with fresh, organic foods

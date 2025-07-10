@@ -6,7 +6,7 @@ const Aboutus = () => {
     <div className="my-2 xl:h-[541px]  flex items-center flex-wrap  justify-between p-4">
       {/* Left Side */}
       <div className="w-[644px] p-6 rounded-md ">
-        <h2 className="text-[40px] font-[700] mb-4">About us</h2>
+        <h2 className="text-[40px] md:text-[50px] font-[700] mb-4">About us</h2>
 
         {/* Company History */}
         <h3 className="text-[20px] font-[700] mb-2">Company History</h3>

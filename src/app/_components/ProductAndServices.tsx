@@ -4,7 +4,7 @@ import React from "react";
 const ProductsAndServices = () => {
   return (
     <div className="bg-white text-center my-10  px-4 xl:px-0">
-      <h1 className="text-[40px]  font-[700] mb-4">Products & Services</h1>
+      <h1 className="text-[40px] md:text-[45px]  font-[700] mb-4">Products & Services</h1>
       <p className="text-[#403F3F] xl:w-[1007px] text-[20px] font-[400] mx-auto">
         Start your journey with fresh ideas. Explore vibrant options, make bold
         choices, and craft experiences that matter. <br />

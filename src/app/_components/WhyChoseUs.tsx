@@ -5,11 +5,11 @@ const WhyChooseUs = () => {
     <section className="h-[752px] flex justify-start  px-4 2xl:px-0">
       <div className="flex justify-start items-center gap-8">
         {/* Left Text Column */}
-        <div className="md:w-[599px] ">
-          <h2 className="text-3xl font-bold mb-6 text-gray-800">
+        <div className="md:w-[700px] ">
+          <h2 className="text-3xl md:text-[40px] font-bold mb-6 text-gray-800">
             Why Choose Us
           </h2>
-          <ul className="space-y-4 text-gray-700 text-[16px] font-[400] leading-[30px]">
+          <ul className="space-y-4 text-gray-700 text-[16px] md:text-[18px] font-[400] leading-[30px]">
             <li className="flex items-start">
               <span className="mr-2 text-green-600 text-xl">✅</span>
               25+ Years of Experience – Deep domain knowledge and a reliable

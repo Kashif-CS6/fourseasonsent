@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
-
-button{
+button {
   cursor: pointer;
 }
 
 body {
   font-family: var(--font-pt-serif), serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
