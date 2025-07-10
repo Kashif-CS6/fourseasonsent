@@ -39,22 +39,24 @@ export default function Home() {
       </div>
 
       {/* our clients */}
-      <div className="mb-30 px-4 xl:px-0">
+      <div className="mb-20 px-4 xl:px-0">
         <div className="xl:w-[1007px]  flex justify-center flex-col text-center items-center mx-auto py-10">
           <h1 className="text-[40px] md:text-[45px] font-[700]">Our Clients</h1>
-          <p className="text-[20px] font-[400]">
+          <p className="text-[20px] font-[400] pt-2">
             Start your journey with fresh ideas. Explore vibrant options, make
             bold choices, and craft experiences that matter. From clean designs
             to smart solutions—everything begins with a single click.
           </p>
         </div>
-        <Image
-          src={"/clients.svg"}
-          width={1351}
-          height={50}
-          className="w-full h-[40px]"
-          alt="clients"
-        />
+        <div className="w-full">
+          <Image
+            src={"/clients.svg"}
+            width={1351}
+            height={50}
+            className="w-full flex-1 h-[100px]"
+            alt="clients"
+          />
+        </div>
       </div>
 
       {/* About us */}
