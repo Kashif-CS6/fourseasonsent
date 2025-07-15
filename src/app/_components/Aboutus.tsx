@@ -55,9 +55,9 @@ const Aboutus = () => {
         <Image
           src={"/about-flowers.svg"}
           alt="about-flowers"
-          width={549}
-          height={358.18}
-          className="w-[549px] h-[358.18px]"
+          width={525}
+          height={490}
+          className="w-[600px] h-[600px]"
         />
       </div>
     </div>

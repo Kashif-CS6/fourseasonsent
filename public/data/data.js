@@ -60,3 +60,46 @@ export const whychosedata = [
       "When quality, reliability, and professionalism matter — choose Four Seasons Enterprises.",
   },
 ];
+
+export const clientdata = [
+  {
+    id: 1,
+    image: "/client1.svg",
+    alt: "Marriott",
+  },
+  {
+    id: 2,
+    image: "/client2.svg",
+    alt: "PC",
+  },
+  {
+    id: 3,
+    image: "/client3.svg",
+    alt: "MOVENPICK",
+  },
+  {
+    id: 4,
+    image: "/client4.svg",
+    alt: "RAMADA",
+  },
+  {
+    id: 5,
+    image: "/client5.svg",
+    alt: "British High Commission Islamabad",
+  },
+  {
+    id: 6,
+    image: "/client6.svg",
+    alt: "United States Embassy",
+  },
+  {
+    id: 7,
+    image: "/client7.svg",
+    alt: "Pakistan Army",
+  },
+  {
+    id: 8,
+    image: "/client8.svg",
+    alt: "Margala",
+  },
+];

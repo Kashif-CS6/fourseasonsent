@@ -9,6 +9,8 @@ import LeadershipTeam from "./_components/LeadershipTeam";
 import ProductsAndServices from "./_components/ProductAndServices";
 import WhyChooseUs from "./_components/WhyChoseUs";
 import Hero from "./_components/Hero";
+import Marquee from "react-fast-marquee";
+import { clientdata } from "../../public/data/data";
 
 export default function Home() {
   return (
@@ -54,13 +56,13 @@ export default function Home() {
           </p>
         </div>
         <div className="w-full">
-          <Image
-            src={"/clients.svg"}
-            width={1351}
-            height={50}
-            className="w-full flex-1 h-[100px]"
-            alt="clients"
-          />
+          <Marquee>
+            <div className="flex items-center gap-5">
+              {clientdata.map((item, index) => (
+                <Image src={item.image} alt={item.alt} key={index} width={110} height={110} className="md:w-[210px] md:h-[120px] object-center" />
+              ))}
+            </div>
+          </Marquee>
         </div>
       </div>
 
