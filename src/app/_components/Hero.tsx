@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="flex items-center flex-wrap md:flex-nowrap justify-between py-20 px-4 2xl:px-0">
       {/* left side */}
       <div className="md:w-[663px] flex  flex-col gap-4">
-        <button className="md:w-[445px] h-[47px] rounded-[360px] bg-white border-[1px] border-[#A9A7A7] tracking-wider">
+        <button className="text-sm md:text-lg md:w-[445px] h-[47px] rounded-[360px] bg-white border-[1px] border-[#A9A7A7] tracking-wider">
           Supplying Freshness & Quality for 25 Years
         </button>
         <div className="leading-[55px] md:leading-[60px]">

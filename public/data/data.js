@@ -21,3 +21,42 @@ export const products = [
       "High-grade pulses, grains, and lentils that meet the needs of large-scale kitchens and mess operations.",
   },
 ];
+
+export const whychosedata = [
+  {
+    id: 1,
+    heading: "25+ Years of Proven Excellence",
+    description:
+      "We’ve built long-term relationships through consistent service, reliable delivery, and premium quality since 1999.",
+  },
+  {
+    id: 2,
+    heading: "Trusted by Top-Tier Clients",
+    description:
+      "From five-star hotels and embassies to government messes and corporate canteens — we’re the trusted choice for those who demand the best.",
+  },
+  {
+    id: 3,
+    heading: "Fresh, High-Quality Products",
+    description:
+      "We source fresh fruits, vegetables, and pulses daily, ensuring every delivery meets the highest standards of quality and hygiene.",
+  },
+  {
+    id: 4,
+    heading: "Timely & Reliable Deliveries",
+    description:
+      "Punctuality is our promise. Our efficient logistics ensure your kitchens are always stocked and your schedules never interrupted.",
+  },
+  {
+    id: 5,
+    heading: "Professional & Discreet Service",
+    description:
+      "We understand the importance of trust and privacy, especially when serving diplomatic and institutional clients.",
+  },
+  {
+    id: 6,
+    heading: "Flexible Supply Solution",
+    description:
+      "When quality, reliability, and professionalism matter — choose Four Seasons Enterprises.",
+  },
+];

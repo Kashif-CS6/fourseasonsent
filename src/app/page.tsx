@@ -27,13 +27,13 @@ export default function Home() {
       </div>
       {/* why chose us */}
       <div
-        className="w-full h-full bg-[#d2f4da]"
-        style={{
-          backgroundImage: `url("/chose.svg")`,
-          backgroundSize: "cover", // or "contain", depending on your desired behavior
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
+        className="w-full h-full"
+        // style={{
+        //   backgroundImage: `url("/chose.svg")`,
+        //   backgroundSize: "cover", // or "contain", depending on your desired behavior
+        //   backgroundRepeat: "no-repeat",
+        //   backgroundPosition: "center",
+        // }}
       >
         <HalfTemplate>
           <WhyChooseUs />
