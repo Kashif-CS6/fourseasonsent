@@ -57,9 +57,16 @@ export default function Home() {
         </div>
         <div className="w-full">
           <Marquee>
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-5 z-0">
               {clientdata.map((item, index) => (
-                <Image src={item.image} alt={item.alt} key={index} width={110} height={110} className="md:w-[210px] md:h-[120px] object-center" />
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  key={index}
+                  width={110}
+                  height={110}
+                  className="md:w-[210px] md:h-[120px] object-center"
+                />
               ))}
             </div>
           </Marquee>
