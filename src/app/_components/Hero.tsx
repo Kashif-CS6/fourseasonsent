@@ -9,7 +9,7 @@ const Hero = () => {
       {/* left side */}
       <div className="md:w-[663px] flex  flex-col gap-4">
         <button className="md:w-[445px] h-[47px] rounded-[360px] bg-white border-[1px] border-[#A9A7A7] tracking-wider">
-          Supply Freshers & Quality for 25 Years
+          Supplying Freshness & Quality for 25 Years
         </button>
         <div className="leading-[55px] md:leading-[60px]">
           <h1 className="text-[40px] md:text-[45px] font-[700]">Premium</h1>
