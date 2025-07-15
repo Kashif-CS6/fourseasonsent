@@ -1,8 +1,22 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { useParams, usePathname } from "next/navigation";
+import React, { useState, useEffect, act } from "react";
 
 const Navbar = () => {
+  const [activeTab, setActiveTab] = useState();
+
+  useEffect(() => {
+    const value = localStorage.getItem("Tab");
+    //@ts-ignore
+    setActiveTab(value || "/");
+  }, []);
+
+  const handleTab = (e: any) => {
+    setActiveTab(e);
+    localStorage.setItem("Tab", e);
+  };
   return (
     <nav className="h-[100px] font-sans    flex items-center justify-between px-2 2xl:px-0">
       {/* left */}
@@ -19,21 +33,39 @@ const Navbar = () => {
       {/* middle */}
       <div className="font-[500] text-[15.93px] hidden lg:flex gap-1 leading-[100%]">
         <Link
-          className="text-white bg-[#3BAC43] rounded-[106.18px] px-9 py-[11px]"
+          onClick={() => handleTab("home")}
+          className={`${
+            activeTab === "home" ? "text-white bg-[#3BAC43]" : "text-black"
+          } rounded-[106.18px] px-9 py-[11px]`}
           href={"/"}
         >
           Home
         </Link>
         <Link
+          onClick={() => handleTab("about")}
           href={"/#about"}
-          className=" rounded-[106.18px] px-9 py-[11px] duration-700 delay-150"
+          className={`${
+            activeTab === "about" ? "text-white bg-[#3BAC43]" : "text-black"
+          } rounded-[106.18px] px-9 py-[11px]`}
         >
           About us
         </Link>
-        <Link href={"/#contact"} className="rounded-[106.18px] px-9 py-[11px]">
+        <Link
+          onClick={() => handleTab("contact")}
+          href={"/#contact"}
+          className={`${
+            activeTab === "contact" ? "text-white bg-[#3BAC43]" : "text-black"
+          } rounded-[106.18px] px-9 py-[11px]`}
+        >
           Contact us
         </Link>
-        <Link href={"/"} className=" rounded-[106.18px] px-9 py-[11px]">
+        <Link
+          onClick={() => handleTab("product")}
+          href={"/"}
+          className={`${
+            activeTab === "product" ? "text-white bg-[#3BAC43]" : "text-black"
+          } rounded-[106.18px] px-9 py-[11px]`}
+        >
           Products
         </Link>
       </div>
