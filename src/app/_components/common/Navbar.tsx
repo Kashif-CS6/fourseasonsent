@@ -10,7 +10,7 @@ const Navbar = () => {
   useEffect(() => {
     const value = localStorage.getItem("Tab");
     //@ts-ignore
-    setActiveTab(value || "/");
+    setActiveTab(value || "");
   }, []);
 
   const handleTab = (e: any) => {

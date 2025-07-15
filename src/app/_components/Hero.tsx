@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -29,9 +31,13 @@ const Hero = () => {
           <button className="w-[150px] md:w-[190px] h-[50px] bg-[#3BAC43] text-white rounded-md">
             Enquire Now
           </button>
-          <button className="w-[150px] md:w-[190px] h-[50px] border-[1px] border-[#9B9B9B] rounded-md">
+          <Link
+            onClick={() => localStorage.setItem("Tab", "contact")}
+            href={"/#contact"}
+            className="w-[150px] md:w-[190px] h-[50px] border-[1px] border-[#9B9B9B] rounded-md flex justify-center items-center"
+          >
             Contact
-          </button>
+          </Link>
         </div>
       </div>
       {/* right side */}
