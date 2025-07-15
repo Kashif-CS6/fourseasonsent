@@ -12,17 +12,15 @@ const Hero = () => {
           Supply Freshers & Quality for 25 Years
         </button>
         <div className="leading-[55px] md:leading-[60px]">
-          <h1 className="text-[40px] md:text-[45px] font-[700]">
-            Premium Fruits
-          </h1>
+          <h1 className="text-[40px] md:text-[45px] font-[700]">Premium</h1>
           <h1 className="text-[#3BAC43] text-[40px] md:text-[45px] font-[700]">
-            Vegetables & Pulses
+            Fruits Vegetables & Pulses
           </h1>
           <h1 className="text-[40px] md:text-[45px] font-[700]">
             Delivered with Reliability and Care.
           </h1>
         </div>
-        <p className="text-[18px] font-[400] text-[#403F3F] text-justify">
+        <p className="text-[18px] md:text-[20px] font-[400] text-[#403F3F] text-justify">
           For over two decades, Four Seasons Enterprises has been a trusted name
           in the wholesale supply of fresh fruits, handpicked vegetables, and
           high-quality pulses. We cater to retailers, hotels, and businesses
