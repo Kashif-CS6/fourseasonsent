@@ -7,7 +7,7 @@ const LeadershipTeam = () => {
       {/* Heading */}
       <div className="text-center mb-10">
         <h2 className="text-[40px] md:text-[50px]  font-[700] mb-4">Leadership Team</h2>
-        <p className="text-[#403F3F] xl:w-[1007px] text-[20px] font-[400] mx-auto">
+        <p className="text-[#403F3F] xl:w-[1007px] text-justify md:text-center text-[20px] font-[400] mx-auto">
           Start your journey with fresh ideas. Explore vibrant options, make
           bold choices, and craft experiences that matter.
           <br />

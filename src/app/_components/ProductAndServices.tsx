@@ -7,7 +7,7 @@ const ProductsAndServices = () => {
       <h1 className="text-[40px] md:text-[45px]  font-[700] mb-4">
         Products & Services
       </h1>
-      <p className="text-[#403F3F] xl:w-[1007px] text-[20px] font-[400] mx-auto">
+      <p className="text-[#403F3F] text-justify md:text-center xl:w-[1007px] text-[20px] font-[400] mx-auto">
         At Four Seasons Enterprises, we supply a carefully curated selection of
         fresh, high-quality produce and essential pulses. Sourced daily from
         trusted farms and suppliers, our products are delivered with care to

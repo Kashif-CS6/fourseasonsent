@@ -22,7 +22,7 @@ const WhyCard: React.FC<WhyCardTypes> = ({ heading, description, key }) => {
           {heading}
         </h1>
       </div>
-      <p className="text-[18px] "> {description}</p>
+      <p className="text-[18px] font-sans font-[400]"> {description}</p>
     </div>
   );
 };
