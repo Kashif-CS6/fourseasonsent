@@ -5,7 +5,10 @@ interface HalfTemplateProps {
 }
 
 const HalfTemplate: React.FC<HalfTemplateProps> = ({ children }) => {
-  return <div className="xl:w-[1280px] mx-auto">{children}</div>;
+  return (
+    //@ts-ignore
+    <div className="xl:w-[1280px] mx-auto">{children}</div>
+  );
 };
 
 export default HalfTemplate;

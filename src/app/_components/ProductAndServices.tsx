@@ -8,10 +8,11 @@ const ProductsAndServices = () => {
         Products & Services
       </h1>
       <p className="text-[#403F3F] xl:w-[1007px] text-[20px] font-[400] mx-auto">
-        Start your journey with fresh ideas. Explore vibrant options, make bold
-        choices, and craft experiences that matter. <br />
-        From clean designs to smart solutions—everything begins with a single
-        click.
+        At Four Seasons Enterprises, we supply a carefully curated selection of
+        fresh, high-quality produce and essential pulses. Sourced daily from
+        trusted farms and suppliers, our products are delivered with care to
+        ensure maximum freshness, hygiene, and shelf life — meeting the highest
+        standards demanded by hotels, embassies, and institutional kitchens.
       </p>
 
       <div className="mt-10 flex items-center justify-center flex-wrap gap-6 mx-auto">
@@ -29,7 +30,7 @@ const ProductsAndServices = () => {
               className="mx-auto mb-4 w-[350px]  h-[230px]"
             />
             <h2 className="text-2xl font-bold">{item.heading}</h2>
-            <p className="text-gray-600 mt-2">{item.tagline}</p>
+            <p className="text-gray-600 mt-2 px-2">{item.tagline}</p>
             <button className="mt-4 w-fit mx-auto bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded">
               Contact or inquiry form
             </button>

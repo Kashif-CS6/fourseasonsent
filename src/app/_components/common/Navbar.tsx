@@ -61,7 +61,7 @@ const Navbar = () => {
         </Link>
         <Link
           onClick={() => handleTab("product")}
-          href={"/"}
+          href={"/#product"}
           className={`${
             activeTab === "product" ? "text-white bg-[#3BAC43]" : "text-black"
           } rounded-[106.18px] px-9 py-[11px]`}

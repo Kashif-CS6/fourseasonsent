@@ -3,7 +3,7 @@ import React from "react";
 
 const Aboutus = () => {
   return (
-    <div className="my-2 xl:h-[700px]  flex items-center flex-wrap  justify-between p-4">
+    <div className="my-2 xl:h-[700px]  flex items-center flex-wrap  justify-between p-4 ">
       {/* Left Side */}
       <div className="w-[644px] p-6 rounded-md ">
         <h2 className="text-[40px] md:text-[50px] font-[700] mb-4">

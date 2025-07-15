@@ -3,18 +3,21 @@ export const products = [
     id: 1,
     image: "/fruits.svg",
     heading: "Fruits",
-    tagline: "Mangoes, Apples, Bananas, Oranges,Papayas",
+    tagline:
+      "We offer a wide variety of seasonal and imported fruits, handpicked for quality and ripeness.",
   },
   {
     id: 2,
     image: "/flowers.svg",
     heading: "Vegetables",
-    tagline: "Tomatoes, Onions, Potatoes, Leafy Greens, Carrots",
+    tagline:
+      "Our vegetables are sourced fresh every day — cleaned, sorted, and packaged for your kitchen’s convenience.",
   },
   {
     id: 3,
     image: "/pulses.svg",
     heading: "Pulses",
-    tagline: "Chana Dal, Moong Dal, Toor Dal, Masoor Dal",
+    tagline:
+      "High-grade pulses, grains, and lentils that meet the needs of large-scale kitchens and mess operations.",
   },
 ];

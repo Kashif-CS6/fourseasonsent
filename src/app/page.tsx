@@ -20,9 +20,11 @@ export default function Home() {
         </HalfTemplate>
       </div>
       {/* Product and Services */}
-      <HalfTemplate>
-        <ProductsAndServices />
-      </HalfTemplate>
+      <div className="py-15" id="product">
+        <HalfTemplate>
+          <ProductsAndServices />
+        </HalfTemplate>
+      </div>
       {/* why chose us */}
       <div
         className="w-full h-full bg-[#d2f4da]"
@@ -63,11 +65,14 @@ export default function Home() {
       </div>
 
       {/* About us */}
-      <FullTemplate color="#E1FEE2" id="about">
-        <HalfTemplate>
-          <Aboutus />
-        </HalfTemplate>
-      </FullTemplate>
+      <div className="py-15" id="about">
+        {/* @ts-ignore */}
+        <FullTemplate color="#E1FEE2">
+          <HalfTemplate>
+            <Aboutus />
+          </HalfTemplate>
+        </FullTemplate>
+      </div>
       <HalfTemplate>
         <LeadershipTeam />
       </HalfTemplate>
