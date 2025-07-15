@@ -41,11 +41,14 @@ export default function Home() {
       {/* our clients */}
       <div className="mb-20 px-4 xl:px-0">
         <div className="xl:w-[1007px]  flex justify-center flex-col text-center items-center mx-auto py-10">
-          <h1 className="text-[40px] md:text-[45px] font-[700]">Our Clients</h1>
-          <p className="text-[20px] font-[400] pt-2">
-            Start your journey with fresh ideas. Explore vibrant options, make
-            bold choices, and craft experiences that matter. From clean designs
-            to smart solutions—everything begins with a single click.
+          <h1 className="text-[40px] md:text-[45px] font-[700]">
+            Trusted by Top Businesses for 25+ Years
+          </h1>
+          <p className="text-[20px] text-justify md:text-center font-[400] pt-2">
+            For over 25 years, Four Seasons Enterprises has proudly supplied
+            premium fresh produce, pulses, and essentials to leading hotels,
+            diplomatic missions, and mess facilities across Pakistan — with a
+            focus on reliability, discretion, and quality.
           </p>
         </div>
         <div className="w-full">

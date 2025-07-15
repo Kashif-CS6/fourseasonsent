@@ -13,19 +13,20 @@ const Hero = () => {
         </button>
         <div className="leading-[55px] md:leading-[60px]">
           <h1 className="text-[40px] md:text-[45px] font-[700]">
-            Organic Foods
+            Premium Fruits
           </h1>
           <h1 className="text-[#3BAC43] text-[40px] md:text-[45px] font-[700]">
-            Your Doorsteps
+            Vegetables & Pulses
           </h1>
           <h1 className="text-[40px] md:text-[45px] font-[700]">
-            Freshness Delivered.
+            Delivered with Reliability and Care.
           </h1>
         </div>
         <p className="text-[18px] font-[400] text-[#403F3F] text-justify">
-          Experience the true taste of nature with fresh, organic foods
-          delivered straight to your doorstep, making healthy living simple and
-          convenient
+          For over two decades, Four Seasons Enterprises has been a trusted name
+          in the wholesale supply of fresh fruits, handpicked vegetables, and
+          high-quality pulses. We cater to retailers, hotels, and businesses
+          that value consistent quality and timely delivery.
         </p>
         <div className="flex items-center gap-2 pt-4">
           <button className="w-[150px] md:w-[190px] h-[50px] bg-[#3BAC43] text-white rounded-md">
