@@ -10,14 +10,17 @@ const Footer = () => {
         {/* level 1 */}
         <div className="w-[277.83px] flex flex-col gap-6">
           <Image
-            src={"/circle-logo.svg"}
-            width={126}
-            height={34.97}
-            alt="circle-logo"
+            src={"/logo.png"}
+            width={130}
+            height={40}
+            alt="logo"
+            className="w-[180px] h-[40px] xl:w-[200px] xl:h-[50px] object-cover"
           />
-          <p className="text-[#71717A]">
-            Clarity gives you the blocks and components you need to create a
-            truly professional website.
+          <p className="text-[#71717A] text-left">
+            For over two decades, Four Seasons Enterprises has been a trusted
+            name in the wholesale supply of fresh fruits, handpicked vegetables,
+            and high-quality pulses. We cater to retailers, hotels, and
+            businesses that value consistent quality and timely delivery.
           </p>
         </div>
         {/* level 2 */}
@@ -26,8 +29,11 @@ const Footer = () => {
           <Link href={"/"} className="leading-[22.68px] text-[15.12px]">
             About
           </Link>
-          <Link href={"/"} className="leading-[22.68px] text-[15.12px]">
-            Features
+          <Link
+            href={"/#products"}
+            className="leading-[22.68px] text-[15.12px]"
+          >
+            Products
           </Link>
           <Link href={"/"} className="leading-[22.68px] text-[15.12px]">
             Works
@@ -40,7 +46,7 @@ const Footer = () => {
         <div className=" flex flex-col gap-6 text-[13px] font-[600] leading-[17.1px] tracking-[0.95px]">
           <h1 className="text-[#94A3B8]">HELP</h1>
           <Link href={"/"} className="leading-[22.68px] text-[15.12px]">
-            Customer Support
+            Contact us
           </Link>
           <Link href={"/"} className="leading-[22.68px] text-[15.12px]">
             Delivery Details
@@ -73,7 +79,7 @@ const Footer = () => {
       <div className="">
         <hr className="w-full bg-[#E2E8F0] text-[#E2E8F0]" />
         <p className="text-center py-8 text-[13px] font-[400]">
-          © Copyright 2022, All Rights Reserved by asad
+          © Copyright 2025, All Rights Reserved
         </p>
       </div>
     </footer>

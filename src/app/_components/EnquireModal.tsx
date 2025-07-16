@@ -29,11 +29,11 @@ const EnquireModal: React.FC<ModalProps> = ({ open, onClose }) => {
     <div
       ref={overlayRef}
       className="
-        fixed inset-0 flex items-center justify-center bg-[#d2f4da] bg-opacity-50 backdrop-blur-sm z-50
+        fixed inset-0 flex items-center justify-center  bg-opacity-50 backdrop-blur-xs z-50
       "
       onMouseDown={(e) => e.target === overlayRef.current && onClose()}
     >
-      <div className="relative bg-white rounded-lg shadow-lg w-full max-w-md p-6">
+      <div className="relative bg-white rounded-lg shadow-lg w-full max-w-3xl p-6">
         <button
           className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
           onClick={onClose}
@@ -45,74 +45,83 @@ const EnquireModal: React.FC<ModalProps> = ({ open, onClose }) => {
 
         {/* @ts‑ignore */}
         <form action="/api/enquiry" method="post" className="space-y-4">
-          <div>
-            <label className="block font-medium mb-1">Full Name *</label>
-            <input
-              type="text"
-              name="fullName"
-              required
-              className="w-full border px-3 py-2 rounded"
-            />
+          {/* Full Name and Hotel Name */}
+          <div className="flex justify-between items-end md:items-center flex-wrap gap-3">
+            <div className="flex-1">
+              <label className="block font-medium mb-1">Full Name *</label>
+              <input
+                type="text"
+                name="fullName"
+                required
+                className="w-full border px-3 py-2 rounded"
+              />
+            </div>
+            <div className="flex-1">
+              <label className="block font-medium mb-1">
+                Hotel/Business Name *
+              </label>
+              <input
+                type="text"
+                name="businessName"
+                required
+                className="w-full border px-3 py-2 rounded"
+              />
+            </div>
           </div>
-          <div>
-            <label className="block font-medium mb-1">
-              Hotel/Business Name *
-            </label>
-            <input
-              type="text"
-              name="businessName"
-              required
-              className="w-full border px-3 py-2 rounded"
-            />
+          {/* contact number and email */}
+          <div className="flex items-end md:items-center justify-between gap-3 flex-wrap">
+            <div className="flex-1">
+              <label className="block font-medium mb-1">Contact Number *</label>
+              <input
+                type="tel"
+                name="contactNumber"
+                required
+                className="w-full border px-3 py-2 rounded"
+              />
+            </div>
+            <div className="flex-1">
+              <label className="block font-medium mb-1">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                className="w-full border px-3 py-2 rounded"
+              />
+            </div>
           </div>
-          <div>
-            <label className="block font-medium mb-1">Contact Number *</label>
-            <input
-              type="tel"
-              name="contactNumber"
-              required
-              className="w-full border px-3 py-2 rounded"
-            />
-          </div>
-          <div>
-            <label className="block font-medium mb-1">Email Address</label>
-            <input
-              type="email"
-              name="email"
-              className="w-full border px-3 py-2 rounded"
-            />
-          </div>
-          <div>
-            <label className="block font-medium mb-1">
-              Type of Requirement *
-            </label>
-            <select
-              name="requirementType"
-              required
-              className="w-full border px-3 py-2 rounded"
-            >
-              <option value="">Select an option</option>
-              <option value="fruits">Fruits</option>
-              <option value="vegetables">Vegetables</option>
-              <option value="pulses">Pulses</option>
-              <option value="all">All of the above</option>
-            </select>
-          </div>
-          <div>
-            <label className="block font-medium mb-1">
-              Estimated Quantity / Frequency *
-            </label>
-            <select
-              name="quantityFrequency"
-              required
-              className="w-full border px-3 py-2 rounded"
-            >
-              <option value="">Select frequency</option>
-              <option value="daily">Daily</option>
-              <option value="weekly">Weekly</option>
-              <option value="bulk">Bulk</option>
-              <option value="custom">Custom</option>
-            </select>
+          {/* Type of requiremnts and Astimated Quantity */}
+          <div className="flex items-end md:items-center justify-between gap-3 flex-wrap">
+            <div className="flex-1">
+              <label className="block font-medium mb-1">
+                Type of Requirement *
+              </label>
+              <select
+                name="requirementType"
+                required
+                className="w-full border px-3 py-2 rounded"
+              >
+                <option value="">Select an option</option>
+                <option value="fruits">Fruits</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="pulses">Pulses</option>
+                <option value="all">All of the above</option>
+              </select>
+            </div>
+            <div className="flex-1">
+              <label className="block font-medium mb-1">
+                Estimated Quantity / Frequency *
+              </label>
+              <select
+                name="quantityFrequency"
+                required
+                className="w-full border px-3 py-2 rounded"
+              >
+                <option value="">Select frequency</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="bulk">Bulk</option>
+                <option value="custom">Custom</option>
+              </select>
+            </div>
           </div>
           <div>
             <label className="block font-medium mb-1">
@@ -136,7 +145,7 @@ const EnquireModal: React.FC<ModalProps> = ({ open, onClose }) => {
           </div>
           <button
             type="submit"
-            className="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition"
+            className="w-full bg-green-600 text-white py-2 md:py-3 rounded hover:bg-green-700 transition"
           >
             Submit Enquiry
           </button>
