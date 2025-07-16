@@ -11,3 +11,21 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* 
+modal code */
+/* global styles */
+body.modal-open {
+  position: fixed;
+  top: var(--scroll-y);
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.modal-inner {
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
