@@ -87,17 +87,7 @@ export default function Home() {
       </HalfTemplate>
 
       {/* Contact Form */}
-      <div className="flex flex-col gap-4 py-10 px-4 xl:px-0 font-sans">
-        <h1 className="text-[36px] md:text-[45px] font-[600] text-center leading-[44px] tracking-[-2%]">
-          Get In touch
-        </h1>
-        <p
-          id="contact"
-          className="text-center text-[20px] font-[400] text-[#667085]"
-        >
-          We’d love to hear from you. Please fill out this form.
-        </p>
-      </div>
+     
       <FullTemplate color="#EFFFF0" id="normal">
         <HalfTemplate>
           <ContactForm />
