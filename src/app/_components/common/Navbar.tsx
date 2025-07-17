@@ -38,7 +38,9 @@ const Navbar = () => {
           <Link
             onClick={() => handleTab("home")}
             className={`${
-              activeTab === "home" ? "text-white bg-[#3BAC43]" : "text-black"
+              activeTab === "home"
+                ? "text-white bg-[#3BAC43] hover:bg-green-600"
+                : "text-black"
             } rounded-[106.18px] px-9 py-[11px]`}
             href={"/"}
           >
@@ -48,7 +50,9 @@ const Navbar = () => {
             onClick={() => handleTab("about")}
             href={"/#about"}
             className={`${
-              activeTab === "about" ? "text-white bg-[#3BAC43]" : "text-black"
+              activeTab === "about"
+                ? "text-white bg-[#3BAC43] hover:bg-green-600"
+                : "text-black"
             } rounded-[106.18px] px-9 py-[11px]`}
           >
             About us
@@ -57,7 +61,9 @@ const Navbar = () => {
             onClick={() => handleTab("contact")}
             href={"/#contact"}
             className={`${
-              activeTab === "contact" ? "text-white bg-[#3BAC43]" : "text-black"
+              activeTab === "contact"
+                ? "text-white bg-[#3BAC43]  hover:bg-green-600"
+                : "text-black"
             } rounded-[106.18px] px-9 py-[11px]`}
           >
             Contact us
@@ -66,7 +72,9 @@ const Navbar = () => {
             onClick={() => handleTab("product")}
             href={"/#product"}
             className={`${
-              activeTab === "product" ? "text-white bg-[#3BAC43]" : "text-black"
+              activeTab === "product"
+                ? "text-white bg-[#3BAC43] hover:bg-green-600"
+                : "text-black"
             } rounded-[106.18px] px-9 py-[11px]`}
           >
             Products
@@ -75,7 +83,7 @@ const Navbar = () => {
         {/* right */}
         <button
           onClick={() => setOpen(true)}
-          className="w-[140px] py-[6px] md:py-0 md:w-[160px] md:h-[45px] rounded-[6px]  font-[400] font-serif text-center flex items-center justify-center text-[18px] text-white bg-[#3BAC43]"
+          className="w-[140px] py-[6px] md:py-0 md:w-[160px] md:h-[45px] rounded-[6px]  font-[400] font-serif text-center flex items-center justify-center text-[18px] text-white bg-[#3BAC43] hover:bg-green-600"
         >
           Enquire Now
         </button>

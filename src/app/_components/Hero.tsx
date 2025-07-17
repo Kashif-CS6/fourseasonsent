@@ -27,13 +27,13 @@ const Hero = () => {
           that value consistent quality and timely delivery.
         </p>
         <div className="flex items-center gap-2 pt-4">
-          <button className="w-[150px] md:w-[190px] h-[50px] bg-[#3BAC43] text-white rounded-md">
+          <button className="w-[150px] md:w-[190px] h-[50px] bg-[#3BAC43] text-white rounded-md hover:bg-green-600">
             Enquire Now
           </button>
           <Link
             onClick={() => localStorage.setItem("Tab", "contact")}
             href={"/#contact"}
-            className="w-[150px] md:w-[190px] h-[50px] border-[1px] border-[#9B9B9B] rounded-md flex justify-center items-center"
+            className="w-[150px] md:w-[190px] h-[50px] border-[1px] border-[#9B9B9B] hover:border-gray-500 hover:bg-green-100 rounded-md flex justify-center items-center"
           >
             Contact
           </Link>

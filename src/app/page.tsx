@@ -87,7 +87,7 @@ export default function Home() {
       </HalfTemplate>
 
       {/* Contact Form */}
-     
+
       <FullTemplate color="#EFFFF0" id="normal">
         <HalfTemplate>
           <ContactForm />
