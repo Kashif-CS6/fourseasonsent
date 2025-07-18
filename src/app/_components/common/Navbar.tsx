@@ -5,10 +5,12 @@ import { useParams, usePathname } from "next/navigation";
 import React, { useState, useEffect, act } from "react";
 import EnquireModal from "../EnquireModal";
 
-const Navbar = () => {
+interface NavbarTypes {
+  openModal: any;
+  open: Boolean;
+}
+const Navbar: React.FC<NavbarTypes> = ({ openModal, open }) => {
   const [activeTab, setActiveTab] = useState();
-  const [open, setOpen] = useState(false);
-
   useEffect(() => {
     const value = localStorage.getItem("Tab");
     //@ts-ignore
@@ -82,14 +84,14 @@ const Navbar = () => {
         </div>
         {/* right */}
         <button
-          onClick={() => setOpen(true)}
+          onClick={openModal}
           className="w-[140px] py-[6px] md:py-0 md:w-[160px] md:h-[45px] rounded-[6px]  font-[400] font-serif text-center flex items-center justify-center text-[18px] text-white bg-[#3BAC43] hover:bg-green-600"
         >
           Enquire Now
         </button>
       </nav>
-
-      <EnquireModal open={open} onClose={() => setOpen(false)} />
+      {/* @ts‑ignore */}
+      <EnquireModal open={open} onClose={openModal} />
     </>
   );
 };

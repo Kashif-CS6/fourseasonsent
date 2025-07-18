@@ -4,14 +4,14 @@ import { FaCheckCircle } from "react-icons/fa";
 interface WhyCardTypes {
   heading: String;
   description: String;
-  key: Number;
+  // key: Number;
 }
 
-const WhyCard: React.FC<WhyCardTypes> = ({ heading, description, key }) => {
+const WhyCard: React.FC<WhyCardTypes> = ({ heading, description }) => {
   return (
     <div
       //@ts-ignore
-      key={key}
+      key={heading}
       className="bg-white flex flex-col gap-4  rounded-md border border-gray-200 w-[300px] h-[300px] p-6"
     >
       {/* top section */}

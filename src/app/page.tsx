@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
 import Navbar from "./_components/common/Navbar";
 import FullTemplate from "./_components/Template/FullTemplate";
 import HalfTemplate from "./_components/Template/HalfTemplate";
@@ -13,12 +15,22 @@ import Marquee from "react-fast-marquee";
 import { clientdata } from "../../public/data/data";
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+
+  const handleModal = () => {
+    setOpen((prev) => !prev);
+  };
   return (
     <div>
+      <div className="bg-[#E1FEE2] sticky top-0">
+        <HalfTemplate>
+          <Navbar openModal={handleModal} open={open} />
+        </HalfTemplate>
+      </div>
       {/* hero section */}
       <div className="bg-[#d2f4da] md:rounded-bl-[200px]">
         <HalfTemplate>
-          <Hero />
+          <Hero openModal={handleModal} />
         </HalfTemplate>
       </div>
       {/* Product and Services */}

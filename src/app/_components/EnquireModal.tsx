@@ -4,7 +4,7 @@ import React, { useRef, useEffect } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 
 interface ModalProps {
-  open: boolean;
+  open: any;
   onClose: () => void;
 }
 

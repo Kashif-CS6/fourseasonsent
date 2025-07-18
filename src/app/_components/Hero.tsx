@@ -3,7 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Hero = () => {
+interface HeroTYpes {
+  openModal: any;
+}
+
+const Hero: React.FC<HeroTYpes> = ({ openModal }) => {
   return (
     <div className="flex items-center flex-wrap md:flex-nowrap justify-between py-20 px-4 2xl:px-0">
       {/* left side */}
@@ -27,7 +31,10 @@ const Hero = () => {
           that value consistent quality and timely delivery.
         </p>
         <div className="flex items-center gap-2 pt-4">
-          <button className="w-[150px] md:w-[190px] h-[50px] bg-[#3BAC43] text-white rounded-md hover:bg-green-600">
+          <button
+            onClick={openModal}
+            className="w-[150px] md:w-[190px] h-[50px] bg-[#3BAC43] text-white rounded-md hover:bg-green-600"
+          >
             Enquire Now
           </button>
           <Link

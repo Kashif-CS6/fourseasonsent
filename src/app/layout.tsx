@@ -26,11 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ptSerif.variable} antialiased relative`}>
-        <div className="bg-[#E1FEE2] sticky top-0">
-          <HalfTemplate>
-            <Navbar />
-          </HalfTemplate>
-        </div>
         <div>{children}</div>
         <div className="bg-[#F8FAFC]">
           <HalfTemplate>
