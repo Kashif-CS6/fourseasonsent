@@ -24,18 +24,18 @@ const Footer = () => {
               Home
             </Link>
             <Link
+              href={"/#product"}
+              className={`${"text-black"} rounded-[106.18px] `}
+            >
+              Products
+            </Link>
+            <Link
               href={"/#about"}
               className={`${"text-black"} rounded-[106.18px] `}
             >
               About us
             </Link>
 
-            <Link
-              href={"/#product"}
-              className={`${"text-black"} rounded-[106.18px] `}
-            >
-              Products
-            </Link>
             <Link href={"/#contact"} className={` rounded-[106.18px] `}>
               Contact us
             </Link>

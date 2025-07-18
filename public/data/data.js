@@ -27,7 +27,7 @@ export const whychosedata = [
     id: 1,
     heading: "25+ Years of Proven Excellence",
     description:
-      "We’ve built long-term relationships through consistent service, reliable delivery, and premium quality since 1999.",
+      "We’ve built long-term relationships through consistent service, reliable delivery, and premium quality.",
   },
   {
     id: 2,
@@ -55,9 +55,9 @@ export const whychosedata = [
   },
   {
     id: 6,
-    heading: "Flexible Supply Solution",
+    heading: "Flexible Supply Solutions",
     description:
-      "When quality, reliability, and professionalism matter — choose Four Seasons Enterprises.",
+      "Whether you need daily, weekly, or customized deliveries — we tailor our supply to meet your exact operational needs",
   },
 ];
 

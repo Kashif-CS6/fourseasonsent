@@ -49,6 +49,17 @@ const Navbar: React.FC<NavbarTypes> = ({ openModal, open }) => {
             Home
           </Link>
           <Link
+            onClick={() => handleTab("product")}
+            href={"/#product"}
+            className={`${
+              activeTab === "product"
+                ? "text-white bg-[#3BAC43] hover:bg-green-600"
+                : "text-black"
+            } rounded-[106.18px] px-9 py-[11px]`}
+          >
+            Products
+          </Link>
+          <Link
             onClick={() => handleTab("about")}
             href={"/#about"}
             className={`${
@@ -69,17 +80,6 @@ const Navbar: React.FC<NavbarTypes> = ({ openModal, open }) => {
             } rounded-[106.18px] px-9 py-[11px]`}
           >
             Contact us
-          </Link>
-          <Link
-            onClick={() => handleTab("product")}
-            href={"/#product"}
-            className={`${
-              activeTab === "product"
-                ? "text-white bg-[#3BAC43] hover:bg-green-600"
-                : "text-black"
-            } rounded-[106.18px] px-9 py-[11px]`}
-          >
-            Products
           </Link>
         </div>
         {/* right */}
