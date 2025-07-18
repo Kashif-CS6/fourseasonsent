@@ -103,3 +103,18 @@ export const clientdata = [
     alt: "Margala",
   },
 ];
+
+export const teamMembers = [
+  {
+    id: 1,
+    name: "Hayat Muhammad Khan",
+    designation: "Founder & CEO",
+    image: "/user.png",
+  },
+  {
+    id: 2,
+    name: "Usama Khan",
+    designation: "Managing Director",
+    image: "/usamakhan.jpg",
+  },
+];
