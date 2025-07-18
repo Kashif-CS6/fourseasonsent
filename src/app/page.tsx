@@ -13,6 +13,7 @@ import WhyChooseUs from "./_components/WhyChoseUs";
 import Hero from "./_components/Hero";
 import Marquee from "react-fast-marquee";
 import { clientdata } from "../../public/data/data";
+import { FormspreeProvider } from "@formspree/react";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -101,9 +102,11 @@ export default function Home() {
       {/* Contact Form */}
 
       <FullTemplate color="#EFFFF0" id="normal">
-        <HalfTemplate>
-          <ContactForm />
-        </HalfTemplate>
+        <FormspreeProvider>
+          <HalfTemplate>
+            <ContactForm />
+          </HalfTemplate>
+        </FormspreeProvider>
       </FullTemplate>
     </div>
   );

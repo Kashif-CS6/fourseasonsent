@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-white flex  justify-center gap-6">
-          <button className="relative">
+          <button className="relative  duration-300">
             <Image
               src={"/instagram.svg"}
               alt="Instagram"
