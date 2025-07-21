@@ -7,7 +7,7 @@ interface HalfTemplateProps {
 const HalfTemplate: React.FC<HalfTemplateProps> = ({ children }) => {
   return (
     //@ts-ignore
-    <div className="xl:w-[1280px] mx-auto">{children}</div>
+    <div className="w-full xl:w-[1280px] mx-auto">{children}</div>
   );
 };
 
