@@ -23,7 +23,7 @@ const LeadershipTeam = () => {
         {/* Team Member 1 (with blue border) */}
         {teamMembers.map((item, index) => (
           <div key={index} className="  overflow-hidden text-center  ">
-            <div className="rounded-4xl w-[400px] h-[455px]">
+            <div className="rounded-4xl md:w-[400px] h-[455px]">
               <Image
                 src={item.image}
                 alt="CEO"
