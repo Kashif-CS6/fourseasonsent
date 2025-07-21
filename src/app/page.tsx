@@ -22,7 +22,7 @@ export default function Home() {
     setOpen((prev) => !prev);
   };
   return (
-    <div>
+    <div className="w-full">
       <div className="bg-[#E1FEE2] sticky top-0">
         <HalfTemplate>
           <Navbar openModal={handleModal} open={open} />
