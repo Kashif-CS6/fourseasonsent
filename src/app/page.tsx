@@ -108,6 +108,11 @@ export default function Home() {
           </HalfTemplate>
         </FormspreeProvider>
       </FullTemplate>
+      <div className="bg-[#F8FAFC]">
+        <HalfTemplate>
+          <Footer />
+        </HalfTemplate>
+      </div>
     </div>
   );
 }

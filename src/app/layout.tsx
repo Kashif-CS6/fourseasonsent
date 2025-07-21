@@ -25,13 +25,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ptSerif.variable} antialiased relative`}>
+      <body className={`${ptSerif.variable} antialiased relative `}>
         <div>{children}</div>
-        <div className="bg-[#F8FAFC]">
-          <HalfTemplate>
-            <Footer />
-          </HalfTemplate>
-        </div>
       </body>
     </html>
   );

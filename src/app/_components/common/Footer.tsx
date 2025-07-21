@@ -6,8 +6,8 @@ const Footer = () => {
   return (
     <footer className="pt-10 md:pt-0 flex flex-col justify-end gap-20 font-sans ">
       {/* top section */}
-      <div className="flex justify-between gap-2 px-4 2xl:px-0 py-6">
-        <div className="flex flex-col gap-2">
+      <div className="flex justify-between flex-wrap gap-4 md:gap-2 px-4 2xl:px-0 py-6">
+        <div className="flex flex-col gap-4 md:gap-2">
           {/* level 1 */}
           <div className="w-[277.83px] flex flex-col gap-6">
             <Image
@@ -19,7 +19,7 @@ const Footer = () => {
             />
           </div>
           {/* links */}
-          <div className=" text-[16px] hidden lg:flex gap-4 leading-[100%]">
+          <div className=" text-[16px] flex gap-4 leading-[100%]">
             <Link className={`${"text-black"} rounded-[106.18px] `} href={"/"}>
               Home
             </Link>
